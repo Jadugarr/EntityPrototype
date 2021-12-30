@@ -9,7 +9,6 @@ namespace UnityTemplateProjects.Systems
 {
     public class MoveCubeSystem : SystemBase
     {
-        private static readonly int Selected = Shader.PropertyToID("_Selected");
         private float currentTime = 0f;
 
         protected override void OnUpdate()
@@ -27,11 +26,11 @@ namespace UnityTemplateProjects.Systems
             {
                 translation.Value = new float3(0f, sin, 0f);
                 
-                if (switchSelection)
+                /*if (switchSelection)
                 {
                     int currentValue = renderMesh.material.GetInt(Selected);
                     renderMesh.material.SetInt(Selected, currentValue == 1 ? 0 : 1);
-                }
+                }*/
                 
             }).WithoutBurst().Run();
         }
