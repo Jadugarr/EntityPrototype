@@ -47,15 +47,6 @@ namespace UnityTemplateProjects.Systems
                 hitEntity = hit.Entity;
                 ecb.AddComponent<HighlightedComponent>(hitEntity);
             }
-            
-            /*Entities.WithAll<HighlightedComponent>().ForEach((Entity e) =>
-            {
-                if (e.Index == hitEntity.Index)
-                {
-                    return;
-                }
-                ecb.RemoveComponent<HighlightedComponent>(e);
-            }).Run();*/
         }
     }
 }

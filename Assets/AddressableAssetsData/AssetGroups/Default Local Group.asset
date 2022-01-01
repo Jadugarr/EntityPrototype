@@ -21,6 +21,10 @@ MonoBehaviour:
     m_Address: TestCube
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: e6cde50736fce1f42beb141c6514f46b
+    m_Address: ValueText
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: b1a2dc5883a49284b946cd02731e81f2, type: 2}
   m_SchemaSet:
